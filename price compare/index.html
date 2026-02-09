@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FoodCompare</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-left">
+    <h1>🍽️ FoodCompare</h1>
+  </div>
+  <div class="header-right">
+    <input type="text" id="searchInput" placeholder="Search for dishes or restaurants...">
+    <a href="cart.html" class="cart-btn">🛒 Cart</a>
+    <a href="#" class="help-btn">❓ Help</a>
+  </div>
+</header>
+
+<!-- LOCATION -->
+<section class="location">
+  <p>Top restaurants in <strong>Coimbatore</strong></p>
+</section>
+
+<!-- FILTERS -->
+<section class="filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="veg">Veg</button>
+  <button class="filter-btn" data-filter="nonveg">Non-Veg</button>
+</section>
+
+<!-- RESTAURANTS -->
+<section class="restaurants">
+
+  <!-- HMR Hotel -->
+  <div class="restaurant-card">
+    <div class="restaurant-header">
+      <h3>HMR Hotel</h3>
+      <span class="offers">🔥 10% off on Paneer Dishes</span>
+      <button class="toggle-menu">View Menu ⌄</button>
+    </div>
+    <div class="menu">
+      <!-- Menu Item Example -->
+      <div class="menu-item veg">
+        <span class="food-type">🌿 Veg</span>
+        <img src="https://via.placeholder.com/60" alt="Paneer Butter Masala" class="food-img">
+        <div class="menu-info">
+          <h4>Paneer Butter Masala</h4>
+          <p>Rating: ⭐4.5</p>
+          <p>Swiggy ₹180 | Zomato ₹200 <span class="badge">🏆 Best Price</span></p>
+        </div>
+        <div class="menu-actions">
+          <div class="qty"><button class="minus">−</button><span>1</span><button class="plus">+</button></div>
+          <button class="add-btn" data-name="Paneer Butter Masala" data-swiggy="180" data-zomato="200">Add</button>
+        </div>
+      </div>
+      <div class="menu-item nonveg">
+        <span class="food-type">🍗 Non-Veg</span>
+        <img src="https://via.placeholder.com/60" alt="Chicken Biryani" class="food-img">
+        <div class="menu-info">
+          <h4>Chicken Biryani</h4>
+          <p>Rating: ⭐4.6</p>
+          <p>Swiggy ₹220 | Zomato ₹240 <span class="badge">🏆 Best Price</span></p>
+        </div>
+        <div class="menu-actions">
+          <div class="qty"><button class="minus">−</button><span>1</span><button class="plus">+</button></div>
+          <button class="add-btn" data-name="Chicken Biryani" data-swiggy="220" data-zomato="240">Add</button>
+        </div>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+  </div>
+
+  <!-- Other restaurants (copy & edit HMR Hotel block) -->
+  <div class="restaurant-card">
+    <div class="restaurant-header">
+      <h3>Urban Tadka</h3>
+      <span class="offers">🎁 Free Dessert on orders above ₹300</span>
+      <button class="toggle-menu">View Menu ⌄</button>
+    </div>
+    <div class="menu">
+      <div class="menu-item veg">
+        <span class="food-type">🌿 Veg</span>
+        <img src="https://via.placeholder.com/60" alt="Veg Paneer Tikka" class="food-img">
+        <div class="menu-info">
+          <h4>Veg Paneer Tikka</h4>
+          <p>Rating: ⭐4.3</p>
+          <p>Swiggy ₹150 | Zomato ₹170 <span class="badge">🏆 Best Price</span></p>
+        </div>
+        <div class="menu-actions">
+          <div class="qty"><button class="minus">−</button><span>1</span><button class="plus">+</button></div>
+          <button class="add-btn" data-name="Veg Paneer Tikka" data-swiggy="150" data-zomato="170">Add</button>
+        </div>
+      </div>
+      <div class="menu-item nonveg">
+        <span class="food-type">🍗 Non-Veg</span>
+        <img src="https://via.placeholder.com/60" alt="Chicken Tikka" class="food-img">
+        <div class="menu-info">
+          <h4>Chicken Tikka</h4>
+          <p>Rating: ⭐4.7</p>
+          <p>Swiggy ₹220 | Zomato ₹210 <span class="badge">🏆 Best Price</span></p>
+        </div>
+        <div class="menu-actions">
+          <div class="qty"><button class="minus">−</button><span>1</span><button class="plus">+</button></div>
+          <button class="add-btn" data-name="Chicken Tikka" data-swiggy="220" data-zomato="210">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Repeat similar structure for Green Leaf, Spice Villa, Royal Feast -->
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
